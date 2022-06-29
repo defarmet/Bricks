@@ -1,6 +1,9 @@
 #pragma once
-#include "Box.h"
+
+#include <vector>
+
 #include "Ball.h"
+#include "Box.h"
 
 class Game
 {
@@ -8,7 +11,7 @@ class Game
 	Box paddle;
 
 	// TODO #1 - Instead of storing 1 brick, store a vector of bricks (by value)
-	Box brick;
+	std::vector<Box> brick;
 
 public:
 	Game();
